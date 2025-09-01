@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contattami — Elisa Riccardi</title>
+  <meta name="description" content="Scrivimi: risposta rapida. Il form aggiorna in tempo reale il profilo e un estratto del CV.">
+  <script>tailwind=config={theme:{extend:{fontFamily:{sans:['Inter','ui-sans-serif','system-ui']},colors:{accent:'#FF6F61'}}}};</script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="antialiased text-gray-800 bg-white bg-grid">
+  <a href="#main" class="skip-link">Salta al contenuto</a>
+  <div id="cursor-blob" aria-hidden="true"></div>
+
+  <header class="sticky top-0 z-40 bg-white/70 backdrop-blur border-b border-gray-100">
+    <nav class="max-w-3xl mx-auto flex items-center justify-between py-3 px-4">
+      <a href="index.html" class="font-extrabold tracking-tight text-gray-900">Elisa Riccardi</a>
+      <ul class="flex items-center gap-6 text-sm">
+        <li><a data-nav href="index.html" class="hover:text-gray-900 text-gray-700">home</a></li>
+        <li><a data-nav href="work.html" class="hover:text-gray-900 text-gray-700">work</a></li>
+        <li><a data-nav href="contattami.html" class="hover:text-gray-900 text-gray-700">contattami</a></li>
+        <li><a class="hover:text-gray-900 text-gray-700" target="_blank" rel="noopener" href="https://www.behance.net/elisariccardi1">behance ↗</a></li>
+        <li><a data-nav href="cv.html" class="hover:text-gray-900 text-gray-700">cv</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="relative z-10 max-w-3xl mx-auto px-4 pt-12 pb-16">
+    <h1 class="text-3xl font-bold text-gray-900 mb-6">Contattami</h1>
+
+    <!-- Toast -->
+    <section class="max-w-3xl mx-auto px-4 py-16">
+  <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
+    Contattami
+  </h2>
+  <p class="text-gray-600 text-center mb-8">
+    Compila il modulo qui sotto, risponderò il prima possibile.
+  </p>
+
+  <form id="contact-form" class="space-y-6 bg-white border border-gray-200 p-6 rounded-xl shadow-sm">
+    <!-- Nome -->
+    <div>
+      <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">Nome</label>
+      <input type="text" id="first-name" name="first-name"
+        class="w-full rounded-lg border border-gray-300 bg-gray-50 px-3 py-2 text-gray-800 placeholder-gray-500 focus:border-accent focus:ring-accent"
+        placeholder="Es. Mario" required>
+    </div>
+
+    <!-- Cognome -->
+    <div>
+      <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Cognome</label>
+      <input type="text" id="last-name" name="last-name"
+        class="w-full rounded-lg border border-gray-300 bg-gray-50 px-3 py-2 text-gray-800 placeholder-gray-500 focus:border-accent focus:ring-accent"
+        placeholder="Es. Rossi" required>
+    </div>
+
+    <!-- Messaggio -->
+    <div>
+      <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Messaggio</label>
+      <textarea id="message" name="message" rows="5"
+        class="w-full rounded-lg border border-gray-300 bg-gray-50 px-3 py-2 text-gray-800 placeholder-gray-500 focus:border-accent focus:ring-accent"
+        placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+    </div>
+
+    <!-- Consenso -->
+    <div class="flex items-start">
+      <input type="checkbox" id="consent" name="consent"
+        class="mt-1 h-4 w-4 rounded border-gray-300 text-accent focus:ring-accent" required>
+      <label for="consent" class="ml-2 text-sm text-gray-600">
+        Confermo l'invio locale dei dati. Nessuna informazione viene salvata online.
+      </label>
+    </div>
+
+    <!-- Bottone -->
+    <div class="text-center">
+      <button type="submit"
+        class="px-6 py-2 rounded-lg bg-gray-900 text-white font-medium hover:bg-gray-800 transition">
+        Invia
+      </button>
+    </div>
+  </form>
+
+  <!-- Messaggio di conferma -->
+  <p id="success-message" class="hidden mt-6 text-center text-green-600 font-semibold">
+    🎉 Messaggio inviato con successo! (Invio solo locale)
+  </p>
+</section>
+
+</html>

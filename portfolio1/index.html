@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Elisa Riccardi — UX/UI Designer</title>
+  <meta name="description" content="Sono una UX/UI designer in crescita: rendo semplici le esperienze digitali. Portfolio, lavori e contatti.">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind (CDN) + piccolo extend -->
+  <script>
+    tailwind = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui'] },
+          colors: { accent: '#FF6F61' }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stili extra -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="antialiased text-gray-800 bg-white bg-grid">
+  <a href="#main" class="skip-link">Salta al contenuto</a>
+  <div id="cursor-blob" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/70 backdrop-blur border-b border-gray-100">
+    <nav class="max-w-3xl mx-auto flex items-center justify-between py-3 px-4" aria-label="Main">
+      <a href="index.html" class="font-extrabold tracking-tight text-gray-900">Elisa Riccardi</a>
+      <ul class="flex items-center gap-6 text-sm">
+        <li><a data-nav href="index.html" class="hover:text-gray-900 text-gray-700">home</a></li>
+        <li><a data-nav href="work.html" class="hover:text-gray-900 text-gray-700">work</a></li>
+        <li><a data-nav href="contattami.html" class="hover:text-gray-900 text-gray-700">contattami</a></li>
+        <li>
+          <a class="text-gray-700 hover:text-gray-900 flex items-center gap-2"
+             target="_blank" rel="noopener" href="https://www.behance.net/elisariccardi1">
+            <i class="fa-brands fa-behance"></i><span class="hidden sm:inline">behance</span>
+          </a>
+        </li>
+        <li><a data-nav href="cv.html" class="hover:text-gray-900 text-gray-700">cv</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="relative z-10">
+    <!-- HERO con colore/contrasto + immagine card -->
+    <section class="relative">
+      <div class="hero-accent" aria-hidden="true"></div>
+
+      <div class="max-w-3xl mx-auto px-4 pt-14 pb-10 md:pb-6 relative z-10 md:grid md:grid-cols-2 md:gap-8 md:items-center">
+        <!-- Testo -->
+        <div>
+          <p class="uppercase text-xs tracking-[0.2em] text-gray-500 mb-2">ciao! sono una</p>
+          <h1 class="text-5xl md:text-6xl font-extrabold leading-[1.05] text-gradient-hero">
+            sono una ux/ui designer in crescita,
+            <span class="block italic font-serif text-3xl md:text-4xl mt-2">rendo semplici le esperienze digitali</span>
+          </h1>
+          <p class="mt-4 text-gray-700 md:text-lg">
+            dalla ricerca ai wireframe fino ai pixel finali. Approccio pragmatico, attenzione ai dettagli e tanta voglia di imparare insieme al team!
+          </p>
+
+          <div class="mt-6 flex flex-wrap gap-3">
+            <a href="work.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg btn-accent text-white transition">
+              <i class="fa-solid fa-briefcase"></i><span>Guarda i miei lavori</span>
+            </a>
+            <a href="https://www.behance.net/elisariccardi1" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-300 hover:border-gray-400 transition bg-white">
+              <i class="fa-brands fa-behance"></i><span>Behance</span>
+            </a>
+            <a href="contattami.html"
+               class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition">
+              <i class="fa-regular fa-paper-plane"></i><span>Contattami</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Immagine -->
+        <div class="mt-8 md:mt-0">
+          <figure class="hero-image-card float-slow ring-accent-soft">
+            <span class="hero-image-shine" aria-hidden="true"></span>
+            <img src="assets/img/hero-elisa.jpg" alt="Ritratto di Elisa Riccardi">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- “Spilla scout” skill -->
+    <section class="max-w-3xl mx-auto px-4 pb-10 md:pb-12">
+      <div class="p-6 rounded-2xl border border-gray-200 bg-white/70 backdrop-blur card-hover">
+        <h2 class="text-xl font-semibold text-gray-900 mb-2">Cosa porto nel team</h2>
+        <p class="text-gray-600 mb-4">Junior mindset, 4 anni in comunicazione/grafica. Pragmatica, collaborativa, orientata all’ascolto.</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">UX Research</span>
+          <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">User Flows</span>
+          <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">Wireframing</span>
+          <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">Prototyping</span>
+          <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">UI Design</span>
+          <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">Design System</span>
+          <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">Accessibilità</span>
+          <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">HTML</span>
+          <span class="px-3 py-1 rounded-full bg-gray-100 text-gray-800 text-sm">CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band colorata -->
+    <section class="max-w-3xl mx-auto px-4 py-10">
+      <div class="rounded-2xl p-6 md:p-7 bg-gradient-to-r from-rose-100 via-white to-sky-100 border border-gray-200">
+        <h2 class="text-2xl font-semibold text-gray-900">Vuoi approfondire i miei case study?</h2>
+        <p class="text-gray-700 mt-1">Ricerca, wireframe, prototipi e UI system: tutto documentato.</p>
+        <div class="mt-4 flex flex-wrap gap-3">
+          <a href="https://www.behance.net/elisariccardi1" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 px-4 py-2 rounded-lg btn-accent text-white transition">
+            <i class="fa-brands fa-behance"></i><span>Apri Behance</span>
+          </a>
+          <a href="work.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition">
+            <i class="fa-solid fa-rectangle-list"></i><span>Vedi Work</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Card contrastate (valori) -->
+    <section class="max-w-3xl mx-auto px-4 pb-14">
+      <div class="grid gap-5 sm:grid-cols-2">
+        <article class="p-6 rounded-2xl bg-white border border-gray-300 shadow-sm hover:shadow-lg transition">
+          <div class="w-10 h-10 rounded-full bg-rose-100 text-rose-600 grid place-items-center mb-3">
+            <i class="fa-solid fa-user-check"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900">Orientamento all’utente</h3>
+          <p class="text-gray-700 mt-1">Decisioni basate su insight, non su assunzioni.</p>
+        </article>
+
+        <article class="p-6 rounded-2xl bg-white border border-gray-300 shadow-sm hover:shadow-lg transition">
+          <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 grid place-items-center mb-3">
+            <i class="fa-solid fa-puzzle-piece"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900">Sistemi scalabili</h3>
+          <p class="text-gray-700 mt-1">Componenti coerenti e accessibili per crescere bene.</p>
+        </article>
+
+        <article class="p-6 rounded-2xl bg-white border border-gray-300 shadow-sm hover:shadow-lg transition">
+          <div class="w-10 h-10 rounded-full bg-amber-100 text-amber-600 grid place-items-center mb-3">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900">Iterazione rapida</h3>
+          <p class="text-gray-700 mt-1">Wireframe & test frequenti per validare presto.</p>
+        </article>
+
+        <article class="p-6 rounded-2xl bg-white border border-gray-300 shadow-sm hover:shadow-lg transition">
+          <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-600 grid place-items-center mb-3">
+            <i class="fa-solid fa-universal-access"></i>
+          </div>
+          <h3 class="text-lg font-semibold text-gray-900">Inclusione & WCAG</h3>
+          <p class="text-gray-700 mt-1">Contrasti, focus e riduzione movimento rispettati.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer con icone social -->
+  <footer class="relative z-10 border-top border-gray-100">
+    <div class="max-w-3xl mx-auto px-4 py-8 text-sm text-gray-600 flex items-center justify-between">
+      <span>© 2025 Elisa Riccardi</span>
+      <div class="flex gap-5 text-lg">
+        <a href="https://www.instagram.com/elisariccardi_" target="_blank" rel="noopener" aria-label="Instagram"
+           class="text-gray-600 hover:text-accent transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/19QQPsEwkV/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"
+           class="text-gray-600 hover:text-accent transition"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/elisa-riccardi-4a3a74b9/" target="_blank" rel="noopener" aria-label="LinkedIn"
+           class="text-gray-600 hover:text-accent transition"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:elisa@example.com" aria-label="Email"
+           class="text-gray-600 hover:text-accent transition"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS generale -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
